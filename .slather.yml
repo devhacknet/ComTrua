@@ -1,0 +1,12 @@
+ci_service: circleci
+coverage_service: coveralls
+xcodeproj: ComTrua.xcodeproj
+source_directory: ./
+build_directory: DERIVED_DATA
+output_directory: $CIRCLE_TEST_REPORTS/slather-report
+scheme: MealPass
+ignore:
+  - Pods/*
+  - ComTruaTests/*
+  - ComTruaUITests/*
+  - ../**/*/Xcode*
